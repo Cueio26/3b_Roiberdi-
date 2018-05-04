@@ -7,10 +7,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="233.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-        <Button fx:id="button" layoutX="235.0" layoutY="161.0" onAction="#handleButtonAction" text="clique aqui" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <JFXButton layoutX="85.0" layoutY="63.0" />
+      <JFXTextField fx:id="txtnumero1" layoutX="26.0" layoutY="47.0" />
+      <JFXTextField fx:id="txtnumero2" layoutX="26.0" layoutY="108.0" />
+      <JFXTextField fx:id="txtresultado" layoutX="26.0" layoutY="160.0" />
+      <Label layoutX="26.0" layoutY="39.0" text="numero1" />
+      <Label layoutX="26.0" layoutY="100.0" text="numero2" />
+      <Label layoutX="26.0" layoutY="152.0" onDragDetected="#soma" text="resultado" />
+      <JFXButton fx:id="btnsoma" layoutX="202.0" layoutY="56.0" onAction="#soma" text="soma" />
     </children>
 </AnchorPane>
