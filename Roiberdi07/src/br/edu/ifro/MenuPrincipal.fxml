@@ -17,5 +17,15 @@
       <Label layoutX="26.0" layoutY="100.0" text="numero2" />
       <Label layoutX="26.0" layoutY="152.0" onDragDetected="#soma" text="resultado" />
       <JFXButton fx:id="btnsoma" layoutX="202.0" layoutY="56.0" onAction="#soma" text="soma" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="341.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Alunos" />
+                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
